@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Réserver-Showroom Relooking</title>
+    <meta name="description" content="Showroom relooking">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/resa.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a class="logo-nav link-no-deco" href="index.html">
+          <h2>Showroom</h2>
+          <p>Relooking .Ms</p>
+        </a>
+      </div>
+      <div class="headElements">
+        <div class="hEl header-service"><a href="services.html">SERVICES</a></div>
+        <div class="hEl header-boutique"><a href="index.html#shop">NOTRE SALON</a></div>
+      </div>
+    </nav>
+
+    <main>
+      <iframe class="google-agenda" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FParis&amp;src=c2hvd3Jvb21yZWxvb2tpbmdtc0BnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZnIuZnJlbmNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%230B8043" style="border-width:0" width="800" height="600"></iframe>
+      <div class="line"></div>
+      <div class="form-container">
+        <form id="contact" action="resa_s.php" method="post">
+          <h3>Réservation</h3>
+          <h4>Prenez rendez-vous</h4>
+          <fieldset>
+            <input name="name" placeholder="Votre nom / prénom" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input name="mail" placeholder="Adresse email" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input name="phone" placeholder="Numéro de téléphone" type="tel" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <select name="service">
+              <optgroup cat="corps" label="Corps">
+                <option>Modelage Relaxant Localisé</option>
+                <option>Massage Complet</option>
+                <option>Massage Ayurvedique Abhyanga</option>
+                <option >Massage Aux Pierres Chaudes</option>
+                <option >Soin du dos</option>
+                <option >Escale en Polynésie</option>
+                <option >Réflexologie Plantaire</option>
+              </optgroup>
+              <optgroup cat="visage" label="Visage">
+                <option value="">Soin Equilibre Ados</option>
+                <option value="">Soin Energie, Clarifiant, Régénérant</option>
+                <option value="">Soin SOS Hydratation Intense</option>
+                <option value="">Soin Anti-Âge : Lissant, Tenseur</option>
+                <option value="">Blanchiment Dentaire</option>
+              </optgroup>
+              <optgroup cat="minceur" label="Minceur">
+                <option value="">1 Séance Minceur</option>
+              </optgroup>
+              <optgroup cat="epilation" label="Epilation">
+                <option value="">Aisselles</option>
+                <option value="">Sourcils : Création Ligne</option>
+                <option value="">Sourcils : Entretien</option>
+                <option value="">Lèvres Ou Menton</option>
+                <option value="">Visage</option>
+                <option value="">Maillot Classique</option>
+                <option value="">Maillot Brésilien</option>
+                <option value="">Maillot Integral</option>
+                <option value="">Jambes Ou Cuisses</option>
+                <option value="">Bras</option>
+                <option value="">Jambe Entière / Maillot Intégrale / Aisselles</option>
+                <option value="">1/2 Jambe / Maillot Classique / Aisselles</option>
+                <option value="">Lèvres Et Sourcils</option>
+              </optgroup>
+              <optgroup cat="maquillage" label="Maquillage">
+                <option value="">Séance d'auto-maquillage</option>
+                <option value="">Maquillage Jour Ou Nuit</option>
+              </optgroup>
+              <optgroup cat="vernis" label="Vernis">
+                <option value="">Beauté Des Mains</option>
+                <option value="">Pose De Vernis Semi-Permanent</option>
+                <option value="">Beauté Des Pieds</option>
+                <option value="">Ongles Gel Aux Chablons - Pose Complète</option>
+                <option value="">Pose Gels Aux Chablons - Pieds</option>
+                <option value="">Gainage Sur Ongles Naturels</option>
+                <option value="">Remplissage Ongles Gel</option>
+                <option value="">Dépose Ongles</option>
+              </optgroup>
+              <optgroup cat="coiffure" label="Coiffure">
+                <option value="">Coupe Homme</option>
+                <option value="">Coupe Enfant Jusqu'à 12 Ans</option>
+                <option value="">Coupe Ado de 12 à 16 Ans</option>
+                <option value="">Forfait Shampoing Brushing Ou Mise En Plis</option>
+                <option value="">Forfait Shampoing Coupe</option>
+                <option value="">Shampoing Couleur Repousse 2cm, Brushing, Séchage, Brushing Ou Mise En Plis</option>
+                <option value="">Shampoing Couleur Repousse 2cm, Coupe, Brushing, Séchage, Brushing Ou Mise En Plis</option>
+                <option value="">Shampoing Mèche Ou Balayage, Coupe, Brushing Ou Mise en Plis</option>
+                <option value="">Shampoing Permanente, Coupe, Brushing Ou Mise En Plis</option>
+                <option value="">Soin</option>
+                <option value="">Renforçateur Brushing Ou Mise En Plis</option>
+              </optgroup>
+              <optgroup cat="cils" label="Cils">
+                <option value="">Pose Complète Cils à Cils</option>
+                <option value="">Remplissage Cils à Cils</option>
+                <option value="">Pose Complète Cils De Soie</option>
+                <option value="">Remplissage Cils De Soie</option>
+                <option value="">Dépose Cils</option>
+                <option value="">Réhaussement De Cils</option>
+                <option value="">Mascara Semi-Permanent</option>
+                <option value="">Réhaussement De Cils + Mascara Semi-Permanent</option>
+                <option value="">Teinture De Sourcils</option>
+                <option value="">Teinture De Cils</option>
+                <option value="">Pose volume Russe 2D</option>
+                <option value="">Pose volume Russe 3D à 6D</option>
+                <option value="">Retouche volume Russe 2D</option>
+                <option value="">Retouche volume Russe 3D à 6D</option>
+                <option value="">Pose Découverte Cils à Cils 1 Cil Sur 3</option>
+              </optgroup>
+              <optgroup cat="mariee" label="Mariée">
+                <option value="">Forfait Essentiel</option>
+                <option value="">Forfait Bouquet</option>
+                <option value="">Forfait Séduction</option>
+              </optgroup>
+            </select>
+          </fieldset>
+          <fieldset>
+            <input class="date" name="date" type="date" tabindex="5" required>
+          </fieldset>
+          <fieldset>
+            <input name="hour" type="time" tabindex="6" required>
+          </fieldset>
+          <fieldset>
+            <textarea name="message" placeholder="Une demande en particulier ? (optionnel)" tabindex="7"></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="about">
+        <div class="horaires">
+          <h1>HORAIRES</h1>
+          <p>Lundi : 14h00 - 19h00</p>
+          <p>Mardi-Samedi : 09h30 - 19h00</p>
+        </div>
+        <div class="adresse">
+          <h1>ADRESSE</h1>
+          <p>Showroom Relooking MS</p>
+          <p>10 Le Peyrat, 33410 Sainte Croix du Mont</p>
+        </div>
+        <div class="contact">
+          <h1>NOUS CONTACTER</h1>
+          <a class="phoneNum">09 53 89 06 71</a>
+          <a class="link-no-deco facebook" href="https://www.facebook.com/Showroom-Relooking-MS-489813901497709/">Facebook</a>
+          <a class="link-no-deco insta" href="https://www.instagram.com/showroom.relooking/"> Instagram</a>
+        </div>
+      </div>
+      <!-- <div class="mentions"></div> -->
+    </footer>
+    <!-- jquery, tweenmax,  timelinemax  -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      let scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 400, // time to scroll en ms
+        easing:'easeInOutCubic'
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+    <script src="scripts/homepage.js"></script>
+  </body>
+</html>

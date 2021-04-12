@@ -1,0 +1,236 @@
+body {
+  overflow-x: hidden; }
+
+nav {
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 30px;
+  height: 10vh; }
+  nav .headElements {
+    display: flex;
+    flex-flow: row; }
+    nav .headElements .hEl {
+      padding: 10px;
+      font-weight: 300; }
+      nav .headElements .hEl a {
+        text-decoration: none;
+        color: black; }
+    nav .headElements .header-service {
+      position: relative; }
+    nav .headElements .header-service::after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      content: "";
+      width: 1px;
+      height: 50%;
+      background-color: lightgrey; }
+
+.homepage .first-screen {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center; }
+  .homepage .first-screen .desc {
+    opacity: 0;
+    width: 25%;
+    transform: translateX(10vw);
+    z-index: 10; }
+    .homepage .first-screen .desc .fp-headline {
+      font-size: 50px;
+      font-weight: 400; }
+    .homepage .first-screen .desc .fp-headline + .fp-headline {
+      font-weight: 300; }
+    .homepage .first-screen .desc .fp-body {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 1.3; }
+    .homepage .first-screen .desc .fp-discover {
+      font-size: 20px;
+      position: relative; }
+      .homepage .first-screen .desc .fp-discover span {
+        display: inline-block; }
+    .homepage .first-screen .desc .fp-discover-after {
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 110%;
+      background-color: black;
+      transform-origin: right; }
+  .homepage .first-screen .logo {
+    width: 70%;
+    height: 75%;
+    background-image: url("../images/homepage.jpg");
+    background-size: cover;
+    filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.2)); }
+.homepage .main-services {
+  margin-top: 10vh;
+  width: 100%;
+  margin-bottom: 20vh; }
+  .homepage .main-services .head-wrapper {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 10vh;
+    text-align: center; }
+    .homepage .main-services .head-wrapper .headline {
+      position: relative;
+      font-size: 40px;
+      font-weight: 400; }
+    .homepage .main-services .head-wrapper .Shead::after {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 105%;
+      top: 120%;
+      transform: translateX(-50%);
+      left: 50%;
+      background-color: black; }
+  .homepage .main-services .services-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center; }
+    .homepage .main-services .services-container .service-item {
+      width: 300px;
+      height: 80vh;
+      margin-bottom: 7vh; }
+      .homepage .main-services .services-container .service-item .headline {
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 400;
+        padding: 10px; }
+      .homepage .main-services .services-container .service-item .desc {
+        padding: 10px;
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 300;
+        margin-bottom: 15px; }
+      .homepage .main-services .services-container .service-item .photo {
+        overflow: hidden;
+        height: 75%;
+        width: 100%;
+        border-radius: 25px; }
+        .homepage .main-services .services-container .service-item .photo img {
+          width: 150%; }
+    .homepage .main-services .services-container .face {
+      transform: translateY(15vh); }
+    .homepage .main-services .services-container .polish {
+      transform: translateY(7vh); }
+.homepage .shop {
+  margin-top: 3vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+  .homepage .shop .shop-headline {
+    position: relative;
+    margin-bottom: 30px; }
+  .homepage .shop .shop-headline::after {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 120%;
+    height: 2px;
+    background-color: grey; }
+  .homepage .shop .shop-photos {
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center; }
+    .homepage .shop .shop-photos .shop-items {
+      width: 20vw;
+      height: 600px;
+      margin: 10px;
+      background: grey;
+      overflow: hidden; }
+      .homepage .shop .shop-photos .shop-items img {
+        height: 100%; }
+
+@media (max-width: 600px) {
+  nav {
+    width: 90%; }
+    nav .logo {
+      margin: 0; }
+    nav .headElements {
+      font-size: 80%; }
+
+  .homepage .first-screen {
+    margin-top: 5vh;
+    flex-flow: column;
+    justify-content: flex-start; }
+    .homepage .first-screen .desc {
+      display: flex;
+      flex-flow: column nowrap;
+      margin-top: 5vh;
+      transform: none !important;
+      order: 2;
+      width: 80%; }
+      .homepage .first-screen .desc .fp-headline {
+        font-size: 30px; }
+      .homepage .first-screen .desc .fp-body {
+        font-size: 17px;
+        line-height: 1.3; }
+      .homepage .first-screen .desc .fp-discover {
+        font-size: 16px;
+        margin-top: 3vh;
+        background-color: #fa9d9d;
+        padding: 22px 20px;
+        border-radius: 13px;
+        width: 80%;
+        align-self: center;
+        text-transform: uppercase;
+        text-align: center; }
+        .homepage .first-screen .desc .fp-discover a {
+          color: white !important;
+          font-weight: 300; }
+      .homepage .first-screen .desc .fp-discover-after {
+        width: 0; }
+    .homepage .first-screen .logo {
+      width: 100%;
+      height: 35vh;
+      background-position-x: center; }
+  .homepage .main-services .head-wrapper {
+    text-align: center;
+    margin-bottom: 5vh; }
+  .homepage .shop .shop-photos {
+    flex-flow: column; }
+    .homepage .shop .shop-photos .shop-items {
+      width: 80%;
+      height: 450px;
+      margin-bottom: 3vh; }
+
+  .face, .polish {
+    transform: translateY(0) !important; }
+
+  .service-item {
+    width: 280px !important; }
+
+  .Shead {
+    font-size: 25px !important; } }
+@media (min-width: 601px) and (max-width: 1200px) {
+  .homepage .first-screen {
+    justify-content: flex-end;
+    position: relative; }
+    .homepage .first-screen .desc {
+      position: absolute;
+      width: 50%;
+      left: 0; }
+  .homepage .shop .shop-photos .shop-items {
+    height: 400px; }
+
+  .face, .polish {
+    transform: translateY(0) !important; } }
+
+/*# sourceMappingURL=homepage.css.map */

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Showroom Relooking</title>
+    <meta name="description" content="Showroom relooking">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a class="logo-nav link-no-deco" href="index.html">
+          <h2>Showroom</h2>
+          <p>Relooking .Ms</p>
+        </a>
+      </div>
+      <div class="headElements">
+        <div class="hEl header-service"><a href="services.html">SERVICES</a></div>
+        <div class="hEl header-boutique"><a href="#shop">NOTRE SALON</a></div>
+      </div>
+    </nav>
+
+
+    <main class="homepage">
+      <div class="first-screen">
+        <div class="desc">
+          <h1 class="fp-headline">Bienvenue chez</h1>
+          <h1 class="fp-headline">Relooking Ms</h1>
+          <p class="fp-body">Le Showroom Relooking MS est un salon de beauté et de bien-être. Nous proposons massages, coiffure, manucure et bien plus encore.</p>
+          <a href="services.html" class="link-no-deco fp-discover">
+            <span>Découvrir nos soins</span>
+            <div class="fp-discover-after"></div>
+          </a>
+        </div>
+        <div class="logo">
+          <!-- <img src="images/homepage.jpeg" alt="flowers"> -->
+        </div>
+      </div>
+      <div class="main-services">
+        <div class="head-wrapper">
+          <span class="Shead headline">Soins principaux</span>
+        </div>
+        <div class="services-container">
+          <div class="service-item body">
+            <div class="headline">corps</div>
+            <div class="desc">
+              Dans cette catégorie vous pouvez trouver différents types de massage et soin.
+            </div>
+            <div class="photo">
+              <a href="services.html#corps">
+                <img src="images/services-corps.jpg" alt="service-corps">
+              </a>
+            </div>
+          </div>
+          <div class="service-item face">
+            <div class="headline">visage</div>
+            <div class="desc">
+              La catégorie visage regroupe des prestations de soins du visage, et blanchiment dentaire.
+            </div>
+            <div class="photo">
+              <a href="services.html#visage">
+                <img src="images/services-visage.jpg" alt="service-visage">
+              </a>
+            </div>
+          </div>
+          <div class="service-item polish">
+            <div class="headline">manucure</div>
+            <div class="desc">
+              Cette catégorie regroupe plusieurs prestations comme la pause de vernis semi-permanents.
+            </div>
+            <div class="photo">
+              <a href="services.html#vernis">
+                <img src="images/services-manucure.jpg" alt="service-manucure">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="shop" class="shop">
+        <h1 class="shop-headline">Notre salon</h1>
+        <div class="shop-photos">
+          <!-- set up les images -->
+          <div class="shop-items">
+            <img src="images/Salon1.jpg" alt="Salon1">
+          </div>
+          <div class="shop-items">
+            <img src="images/Salon2.jpg" alt="Salon2">
+          </div>
+          <div class="shop-items">
+            <img src="images/Salon3.jpg" alt="Salon3">
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="about">
+        <div class="horaires">
+          <h1>HORAIRES</h1>
+          <p>Lundi : 14h00 - 19h00</p>
+          <p>Mardi-Samedi : 09h30 - 19h00</p>
+        </div>
+        <div class="adresse">
+          <h1>ADRESSE</h1>
+          <p>Showroom Relooking MS</p>
+          <p>10 Le Peyrat, 33410 Sainte Croix du Mont</p>
+        </div>
+        <div class="contact">
+          <h1>NOUS CONTACTER</h1>
+          <a class="phoneNum">09 53 89 06 71</a>
+          <a class="link-no-deco facebook" href="https://www.facebook.com/Showroom-Relooking-MS-489813901497709/">Facebook</a>
+          <a class="link-no-deco insta" href="https://www.instagram.com/showroom.relooking/"> Instagram</a>
+        </div>
+      </div>
+      <!-- <div class="mentions"></div> -->
+    </footer>
+    <!-- jquery, tweenmax,  timelinemax  -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+    <script>
+      let scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 400, // time to scroll en ms
+        easing:'easeInOutCubic'
+      });
+    </script>
+    <script src="scripts/homepage.js"></script>
+  </body>
+</html>

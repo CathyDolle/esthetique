@@ -1,0 +1,80 @@
+main {
+  width: 80%;
+  margin: 10vh auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center; }
+  main .form-container {
+    width: 600px;
+    border-radius: 15px;
+    filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.3));
+    background-color: white; }
+    main .form-container form {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center; }
+      main .form-container form h3 {
+        margin-bottom: 5px; }
+      main .form-container form h4 {
+        margin-bottom: 15px;
+        font-weight: 300; }
+      main .form-container form fieldset {
+        border: none; }
+        main .form-container form fieldset input, main .form-container form fieldset textarea, main .form-container form fieldset select {
+          padding: 20px;
+          margin: 5px;
+          border-radius: 10px;
+          border: none;
+          height: 30px;
+          width: 100%;
+          background-color: #F2F1F0; }
+        main .form-container form fieldset select {
+          padding: 5px;
+          height: 40px; }
+        main .form-container form fieldset textarea {
+          height: 100px; }
+        main .form-container form fieldset button {
+          text-transform: uppercase;
+          background-color: #fa9d9d;
+          font-weight: 400;
+          color: white;
+          border-radius: 10px;
+          border: none;
+          width: 50%;
+          height: 40px;
+          text-align: center; }
+  main .line {
+    width: 1px;
+    height: 50vh;
+    background-color: lightgrey; }
+  main .google-agenda {
+    width: 600px;
+    height: 60vh;
+    background-color: pink; }
+
+@media (max-width: 1550px) {
+  main {
+    width: 90%; }
+    main .google-agenda, main .form-container {
+      width: 400px; } }
+@media (max-width: 1000px) {
+  main {
+    flex-flow: column;
+    height: 170vh; }
+    main .google-agenda, main .form-container {
+      width: 60vw; }
+    main .line {
+      width: 50vh;
+      height: 1px; } }
+@media (max-width: 500px) {
+  main {
+    flex-flow: column; }
+    main .google-agenda, main .form-container {
+      width: 90vw; }
+    main .line {
+      width: 50vh;
+      height: 1px; } }
+
+/*# sourceMappingURL=resa.css.map */

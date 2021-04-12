@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Services-Showroom Relooking</title>
+    <meta name="description" content="Showroom relooking - services">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png">
+  </head>
+  <body>
+    <div class="scrollToTop">UP</div>
+    <div class="overlay">
+      <nav class="overlayNav">
+        <ul class="mobile">
+          <li><a class="link-no-deco" href="#corps" data-service="corps">Corps</a></li>
+          <li><a class="link-no-deco" href="#visage" data-service="visage">Visage</a></li>
+          <li><a class="link-no-deco" href="#minceur" data-service="minceur">Minceur</a></li>
+          <li><a class="link-no-deco" href="#epilation" data-service="epilation">Épilation</a></li>
+          <li><a class="link-no-deco" href="#maquillage" data-service="maquillage">Maquillage</a></li>
+          <li><a class="link-no-deco" href="#vernis" data-service="vernis">Vernis</a></li>
+          <li><a class="link-no-deco" href="#coiffure" data-service="coiffure">Coiffure</a></li>
+          <li><a class="link-no-deco" href="#cils" data-service="cils">Cils</a></li>
+          <li><a class="link-no-deco" href="#mariee" data-service="mariee">Mariée</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <nav>
+        <div class="logo">
+          <a class="logo-nav link-no-deco" href="index.html">
+            <h2>Showroom</h2>
+            <p>Relooking .Ms</p>
+          </a>
+        </div>
+        <ul class="desktop">
+          <li><a class="link-no-deco" href="#corps" data-service="corps">Corps</a></li>
+          <li><a class="link-no-deco" href="#visage" data-service="visage">Visage</a></li>
+          <li><a class="link-no-deco" href="#minceur" data-service="minceur">Minceur</a></li>
+          <li><a class="link-no-deco" href="#epilation" data-service="epilation">Épilation</a></li>
+          <li><a class="link-no-deco" href="#maquillage" data-service="maquillage">Maquillage</a></li>
+          <li><a class="link-no-deco" href="#vernis" data-service="vernis">Vernis</a></li>
+          <li><a class="link-no-deco" href="#coiffure" data-service="coiffure">Coiffure</a></li>
+          <li><a class="link-no-deco" href="#cils" data-service="cils">Cils</a></li>
+          <li><a class="link-no-deco" href="#mariee" data-service="mariee">Mariée</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger-1">
+          <span class="lineHam"></span>
+          <span class="lineHam"></span>
+          <span class="lineHam"></span>
+        </div>
+      </nav>
+      <div class="mobileSection">CORPS</div>
+      <div id="services-container">
+      </div>
+    </main>
+
+    <footer>
+      <div class="about">
+        <div class="horaires">
+          <h1>HORAIRES</h1>
+          <p>Lundi : 14h00 - 19h00</p>
+          <p>Mardi-Samedi : 09h30 - 19h00</p>
+        </div>
+        <div class="adresse">
+          <h1>ADRESSE</h1>
+          <p>Showroom Relooking MS</p>
+          <p>10 Le Peyrat, 33410 Sainte Croix du Mont</p>
+        </div>
+        <div class="contact">
+          <h1>NOUS CONTACTER</h1>
+          <a class="phoneNum">09 53 89 06 71</a>
+          <a href="https://www.facebook.com/Showroom-Relooking-MS-489813901497709/" class="link-no-deco facebook">Facebook</a>
+          <a class="link-no-deco insta" href="https://www.instagram.com/showroom.relooking/">Instagram</a>
+        </div>
+      </div>
+    </footer>
+    <!-- jquery, tweenmax,  timelinemax  -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      let scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 400, // time to scroll en ms
+        easing:'easeInOutCubic'
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
